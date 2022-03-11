@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de datos</title>
+    <script>
+        //TIPO DE DATO STRING
+        var nombre = "Victor";
+        console.log(nombre);
+
+        nombre = 50;
+        console.log(typeof nombre);
+
+        //TIPO DE DATO NUMERICO
+        var numero = 30;
+        console.log(numero);
+
+        //TIPO DE DATO OBJECT
+        var objeto = {
+            nombre: "Juan",
+            edad: 25,
+            dni: "87453695"
+        }
+        console.log(objeto);
+
+        //TIPO DE DATO BOOLEAN
+        var bandera = true;
+        console.log(bandera);
+
+        //TIPO DE DATO FUNCTION
+        function miFuncion() { };
+        console.log(typeof miFuncion);
+
+        //TIPO DE DATO SYMBOL
+        var simbolo = Symbol("mi simbolo");
+        console.log(typeof simbolo);
+
+        // TIPO CLASE ES UN FUNCTION
+        class Persona {
+            constructor(nombre, edad) {
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+        }
+        console.log(Persona);
+
+        //TIPO DE DATO UNDEFINED
+        var x;
+        x = undefined;
+        console.log(x);
+
+        //NULL
+        var y = null;
+        console.log(typeof y);
+
+        //ARREGLOS/ARRAYS
+        var autos = ["BMW", "AUDI", "TOYOTA"];
+        console.log(autos);
+
+        var z='';
+        console.log(z);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
