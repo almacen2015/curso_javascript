@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //declaracion de la funcion
+        // sino agregamos la palabra return js automaticamente la coloca
+        function miFuncion(a, b) {
+            //console.log("Suma de: " + (a + b));
+            return a + b;
+        }
+        let suma = miFuncion(7, 9);
+        console.log("La suma es: " + suma);
+
+        //declaracion de una funcion de tipo expresion
+        let x = function (a, b) {
+            return a + b
+        };
+        suma = x(5, 5);
+        console.log(suma);
+
+        // esto una funcion que se llama asi misma
+        (function (a, b) {
+            console.log("retornando la funcion: " + (a + b));
+        })(3, 4);
+
+        //FUNCIONES TIPO FLECHA
+        const miFuncionFlecha = (a, b) => a + b;
+
+        suma = miFuncionFlecha(6, 6);
+        console.log(suma);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
