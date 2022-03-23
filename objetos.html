@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //funcion constructor de tipo persona
+      function Persona(nombre, apellidos, edad) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.nombreCompleto = function () {
+          return this.nombre + " " + this.apellidos;
+        };
+      }
+      // esto hace que se agregue la propiedad y valor a todos los objetos creados de tipo persona
+      Persona.prototype.tel = "224466";
+
+      let padre = new Persona("Juan", "Perez", 22);
+      console.log(padre);
+      //creacion de un objeto
+      /*     let persona = {
+        nombre: "Juan",
+        apellidos: "Perez",
+        edad: 28,
+        idioma: "es",
+        get lang() {
+          return this.idioma.toUpperCase();
+        },
+        set lang(lang) {
+          this.idioma = lang.toUpperCase();
+        },
+        get nombreCompleto() {
+          return this.nombre + " " + this.apellidos;
+        },
+      }
+      console.log(persona.nombreCompleto);
+      console.log(persona.lang);
+      persona.lang = "us";
+      console.log(persona.lang);
+
+            console.log(persona.nombreCompleto());
+                      
+                              let persona2 = new Object();
+                              persona2.nombre = "Victor";
+                              persona2.apellidos = "Orbegozo";
+                              persona2.edad = 27;
+                              console.log(persona2.nombre);
+                      
+                              //for in
+                              for (nombrePropiedad in persona2) {
+                                  console.log(nombrePropiedad); // se accede al nombre de las propiedades
+                                  console.log(persona2[nombrePropiedad]); // se accede a los valores de las propiedades
+                              }
+                      
+                              let personaArray = Object.values(persona);
+                              console.log(personaArray);
+        */
+    </script>
+  </head>
+
+  <body></body>
+</html>
